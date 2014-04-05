@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="moe_money_background">#D3C6B6</color>
+    <color name="moe_money_background_invert">#2C3949</color>
+    <color name="highlight_blue">#1919FF</color>
+
+</resources>

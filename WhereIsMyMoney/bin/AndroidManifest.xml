@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whereismymoney"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+	<uses-permission 
+	    android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.whereismymoney.activity.Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.whereismymoney.activity.Login"
+            android:label="@string/app_name" 
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.whereismymoney.activity.Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.WELCOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.whereismymoney.activity.Register"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.REGISTER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.whereismymoney.activity.ConfirmRegistration"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CONFIRMREGISTRATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+	<activity
+        android:name="com.whereismymoney.activity.AccountInfo"
+        android:label="@string/title_activity_display_message" >
+        <intent-filter>
+                <action android:name="android.intent.action.ACCOUNTINFO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    </activity>
+    
+	<activity
+        android:name="com.whereismymoney.activity.CreateAccount"
+        android:label="@string/title_activity_display_message" >
+        <intent-filter>
+                <action android:name="android.intent.action.CREATEACCOUNT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    </activity>
+    
+    <activity
+        android:name="com.whereismymoney.activity.NewTransaction"
+        android:label="@string/app_name" >
+        <intent-filter>
+                <action android:name="android.intent.action.NEWTRANSACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    </activity>
+    
+    <activity
+        android:name="com.whereismymoney.activity.NewDeposit"
+        android:label="@string/app_name" >
+        <intent-filter>
+                <action android:name="android.intent.action.NEWDEPOSIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    </activity>
+    
+    <activity
+        android:name="com.whereismymoney.activity.NewWithdrawal"
+        android:label="@string/app_name" >
+        <intent-filter>
+                <action android:name="android.intent.action.NEWWITHDRAWAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    </activity>
+    
+    <activity
+            android:name="com.whereismymoney.activity.ForgotPassword"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FORGOTPASSWORD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    <activity
+        android:name="com.whereismymoney.activity.ViewReport"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.VIEWREPORT" />
+			<category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    
+    <activity
+        android:name="com.whereismymoney.activity.AccountDetail"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.VIEWACCOUNTDETAIL" />
+			<category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    
+    <activity
+        android:name="com.whereismymoney.activity.LogOut"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.LOGOUT" />
+			<category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    
+    </application>
+
+</manifest>
